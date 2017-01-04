@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Realtime Form Validation</title>
+	<title>Валидация формы в реальном времени</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
@@ -16,36 +16,36 @@
 
 	<div class="container">
 		<form class="registration">
-			<h1>Registration Form</h1>
+			<h1>Заголовок формы</h1>
 
 			<label for="username">
-				<span>Username</span>
+				<span>Имя пользователя</span>
 
-				<input type="text" id="username" minlength="3" required>
+				<input type="text" id="username" minlength="3" required placeholder="don">
 
 				<ul class="input-requirements">
-					<li>At least 3 characters long</li>
-					<li>Must only contain letters and numbers (no special characters)</li>
+					<li>Не меньше 3 символов</li>
+					<li>Только буквы и цифры ( специальные символы недопустимы )</li>
 				</ul>
 			</label>
 
 			<label for="password">
-				<span>Password</span>
+				<span>Пароль</span>
 
 				<input type="password" id="password" 
-						maxlength="100" minlength="8" required>
+						maxlength="100" minlength="8" required placeholder="1dD@qwer">
 
 				<ul class="input-requirements">
-					<li>At least 8 characters long (and less than 100 characters)</li>
-					<li>Contains at least 1 number</li>
-					<li>Contains at least 1 lowercase letter</li>
-					<li>Contains at least 1 uppercase letter</li>
-					<li>Contains a special character (e.g. @ !)</li>
+					<li>Пароль должен быть длиной не менее 8 символов <br>( и меньше 100 символов )</li>
+					<li>Содержать как минимум 1 цифру</li>
+					<li>Содержать как минимум 1 букву в нижнем регистре</li>
+					<li>Содержать как минимум 1 букву в верхнем регистре</li>
+					<li>Содержать специальный символ (т.к. @ !)</li>
 				</ul>
 			</label>
 
 			<label for="password_repeat">
-				<span>Repeat Password</span>
+				<span>Повторите пароль</span>
 				<input type="password" id="password_repeat" maxlength="100" minlength="8" required>
 			</label>
 
